@@ -1,0 +1,79 @@
+---
+title: "Palmer Penguins"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages("palmerpenguins")
+install.packages("rmarkdown")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+
+library(tidyverse)
+library(ggplot2)
+library(palmerpenguins)
+library(rmarkdown)
+```
+```{r}
+
+```
+```{r}
+head(penguins)
+```
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#plotting the relationship between body mass and flipper length in the three penguin species
+
+
+ggplot(data = penguins) +geom_point(mapping = aes(x = flipper_length_mm, y=body_mass_g))
+
+
+#from the plot it is visible that as the body mass increases the flipper length also increases
+```
+```{r}
+#plotting the relationship between body mass and flipper length by identifying similar species
+
+
+ggplot(data = penguins) +geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g,color=species))
+
+
+#from the plot it is more edvident that Gentoo Species have higher body mass
+
+```
+```{r}
+#plotting the relationship between body mass and flipper length by identifying similar species and segregating the genders
+
+
+ggplot(data = penguins) +geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g,color=species))+facet_grid(sex~species)
+```
+```{r}
+#from the plot we can clearly distinguish male and female pengunis of diiferent species finding out number of penguins in each island
+
+
+ggplot(data = penguins) +geom_bar(mapping = aes(x = island,fill=island))
+
+```
+```{r}
+#finding out the count of penguins in each year based on gender
+
+
+ggplot(data = penguins) +geom_bar(mapping = aes(x = year,fill=sex))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
