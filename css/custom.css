@@ -14,3 +14,9 @@
 .abt-p-margin{
 	margin-bottom: 10px;
 }
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #000;
+    background-color: none !important;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+}

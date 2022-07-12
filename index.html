@@ -319,72 +319,127 @@
 	<div class="container-fluid">
 		<div class="container" style="padding: 40px 0px;">
 			<h2 class="mb-5" id="section-portfolio" style="text-align: center;">Portfolio</h2>
-
-			<div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
-					<div class="grid-inner">
-						<div class="portfolio-image">
-							<a href="shopping/shopping.html">
-								<img src="images/shopping-index.jpg"
-									alt="Open Imagination">
-							</a>
-
-						</div>
-						<div class="portfolio-desc">
-							<h3><a href="shopping/shopping.html">Shopping Dataset</a></h3>
-							<span><a href="shopping/shopping.html">Python</a> </span>
-						</div>
+	
+			<ul class="nav nav-pills mb-5 d-flex justify-content-center" id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+				  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Python</a>
+				</li>
+				<li class="nav-item" role="presentation">
+				  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">R</a>
+				</li>
+				<li class="nav-item" role="presentation">
+				  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">SQL</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-tableau" role="tab" aria-controls="pills-contact" aria-selected="false">Tableau</a>
+				  </li>
+			</ul>
+			
+			  <div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<div id="portfolio" class="portfolio row grid-container gutter-30" data-layout="fitRows">
+						<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
+							<div class="grid-inner">
+								<div class="portfolio-image">
+									<a href="shopping/shopping.html">
+										<img src="images/shopping-index.jpg"
+											alt="Open Imagination">
+									</a>
+		
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="shopping/shopping.html">Shopping Dataset</a></h3>
+									<!-- <span><a href="shopping/shopping.html">Python</a> </span> -->
+								</div>
+							</div>
+						</article>
+						<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
+							<div class="grid-inner">
+								<div class="portfolio-image">
+									<a href="airbnb/airbnb.html">
+										<img src="images/airbnb-index.jpg"
+											alt="Open Imagination">
+									</a>
+		
+								</div>
+								<div class="portfolio-desc">
+									<h3><a href="airbnb/airbnb.html">Airbnb Dataset</a></h3>
+									<!-- <span><a href="airbnb/airbnb.html">Python</a> </span> -->
+								</div>
+							</div>
+						</article>
+						<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
+							<div class="grid-inner">
+								<div class="portfolio-image">
+									<a href="movie.html">
+										<img src="https://cdn.pixabay.com/photo/2016/10/04/13/05/graphic-1714230__480.png"
+											alt="Open Imagination">
+									</a>
+		
+								</div>
+								<div class="portfolio-desc" style="margin-top: 30px;">
+									<h3><a href="movie.html">Movie Dataset</a></h3>
+									<!-- <span><a href="movie.html">Python</a> </span> -->
+								</div>
+							</div>
+						</article>
+	
 					</div>
-				</article>
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
-					<div class="grid-inner">
-						<div class="portfolio-image">
-							<a href="airbnb/airbnb.html">
-								<img src="images/airbnb-index.jpg"
-									alt="Open Imagination">
-							</a>
-
+				</div>
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="portfolio-image">
+								<a href="penguins.html">
+									<img src="images/penguin-index.jpg" >
+								</a>
+		
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="penguins.html">Palmer Penguins</a></h3>
+								<span><a href="penguins.html">R</a></span>
+							</div>
 						</div>
-						<div class="portfolio-desc">
-							<h3><a href="airbnb/airbnb.html">Airbnb Dataset</a></h3>
-							<span><a href="airbnb/airbnb.html">Python</a> </span>
-						</div>
+	
 					</div>
-				</article>
-				<!-- <article class="portfolio-item col-md-4 col-sm-6 col-12 pf-media pf-icons">
-					<div class="grid-inner">
-						<div class="portfolio-image">
-							<a href="movie.html">
-								<img src="https://cdn.pixabay.com/photo/2016/10/04/13/05/graphic-1714230__480.png"
-									alt="Open Imagination">
-							</a>
-
+				</div>
+				<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="portfolio-image">
+								<a href="penguins.html">
+									<img src="images/penguin-index.jpg" >
+								</a>
+		
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="penguins.html">Palmer Penguins</a></h3>
+								<span><a href="penguins.html">R</a></span>
+							</div>
 						</div>
-						<div class="portfolio-desc">
-							<h3><a href="movie.html">Movie Dataset</a></h3>
-							<span><a href="movie.html">Python</a> </span>
-						</div>
+						
 					</div>
-				</article> -->
-
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-illustrations">
-					<div class="grid-inner">
-						<div class="portfolio-image">
-							<a href="penguins.html">
-								<img src="images/penguin-index.jpg" >
-							</a>
-
+				</div>
+				<div class="tab-pane fade" id="pills-tableau" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="portfolio-image">
+								<a href="https://public.tableau.com/app/profile/jithesh5700/viz/Medicaltrends/Dashboard1">
+									<img src="images/medical-trends.jpeg" >
+								</a>
+		
+							</div>
+							<div class="portfolio-desc">
+								<h3><a href="penguins.html">Medical Trends</a></h3>
+								<!-- <span><a href="penguins.html">R</a></span> -->
+							</div>
 						</div>
-						<div class="portfolio-desc">
-							<h3><a href="penguins.html">Palmer Penguins</a></h3>
-							<span><a href="penguins.html">R</a></span>
-						</div>
+						
 					</div>
-				</article>
-
-
-
+				</div>
 			</div>
+
+			
 
 
 
